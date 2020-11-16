@@ -70,7 +70,8 @@ if n1*p1>5 and n3*p3>5 and n1*(1-p1)>5 and n3*(1-p3)>5:
 else:
     print('fail') 
 
-# this is two populations raito test, so Z statistics =(p1 - p2)/np.sqrt()
+# this is two populations raito test, so Z statistics =(p1 - p2)/np.sqrt(p*(1-p)/(n1+n2))
+
 from scipy import stats 
 
 # Null Hypothesis: ratio of campagin3 - ratio of campagin1 <= 0 , alternative Hypothesis : roc3 - roc1 > 0 , this is right 
