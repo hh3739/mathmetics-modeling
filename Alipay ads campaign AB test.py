@@ -36,15 +36,6 @@ df.head(10)
 df.info(null_counts=True)
 
 
-<class 'pandas.core.frame.DataFrame'>
-RangeIndex: 2645957 entries, 0 to 2645956
-Data columns (total 3 columns):
-user_id    2645957 non-null int64
-label      2645957 non-null int64
-dmp_id     2645957 non-null int64
-dtypes: int64(3)
-memory usage: 60.6 MB
-
 
 # group by campaign id, and statistic out the click rate of each campaign 
 
@@ -91,6 +82,6 @@ Z= (p3-p1)/np.sqrt(p*(1-p)/(n1+n3))
 Probablity = stats.norm.sf(Z)
 print(Probablity)
 
-# as p is very close to 0%, reject null hypothesis so we strongly believe that campaign's click rate 
-# campaign are higher than click rate without
+# As probablity is very close to 0%, reject null hypothesis so we strongly believe that campaign3's click rate 
+# are higher than campaign 1 . 
 
