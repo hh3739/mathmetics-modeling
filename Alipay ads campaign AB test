@@ -1,0 +1,22 @@
+'''
+A real-world dataset collected from two marketing campaigns in Alipay.
+This dataset contains two commercial targeting campaign logs in Alipay. Due to privacy issue, data is sampled and desensitized. 
+Although the statistical results on this data set deviate from the actual scale of Alipay.com, 
+it will not affect the applicability of the solution.
+
+emb_tb_2.csv: User feature dataset.
+effect_tb.csv: Click/Non-click dataset.
+seed_cand_tb.csv: Seed users and candidate users dataset.
+
+
+dmp_id	The unique ID of a targeting campaign.
+user_id	The unique ID of an Alipay user.
+label	Denotes whether a user clicked the campaign ads in that day dt.
+dt	Values from {1,2}. Indicates whether it's a first day log (“1”) or a second day log (“2”) for the target campaign.
+
+import pandas as pd 
+from pandas import Series,DataFrame
+import numpy as np 
+import matplotlib.pyplot as plt 
+import seaborn as sns 
+sns.set_style('darkgrid')
